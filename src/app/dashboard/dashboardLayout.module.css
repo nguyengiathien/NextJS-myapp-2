@@ -1,0 +1,52 @@
+.container {
+  display: flex;
+  border: 1px solid green;
+  padding: 10px;
+  margin-top: 10px;
+  min-height: 400px;
+  background: #f9f9f9;
+  border-radius: 8px;
+}
+
+.title {
+  position: absolute;
+  top: 15px;
+  left: 20px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #333;
+}
+
+.sidebar {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 200px;
+  background: #fff;
+  border-right: 1px solid #ddd;
+  border-radius: 8px 0 0 8px;
+}
+
+.sidebar li {
+  border-bottom: 1px solid #eee;
+}
+
+.sidebar li a {
+  display: block;
+  padding: 12px 15px;
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+}
+
+.sidebar li a:hover {
+  background: #0070f3;
+  color: white;
+}
+
+.content {
+  flex: 1;
+  padding: 20px;
+  background: #fff;
+  border-radius: 0 8px 8px 0;
+}
