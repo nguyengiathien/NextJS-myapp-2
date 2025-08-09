@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { BlogData } from "../data";
 import styles from './blog.module.css'
+import BlogIdDisplay from "./BlogIdDisplay";
 export async function generateStaticParams(){
     return BlogData.map(blog => ({blogId:blog.id}));
 }
@@ -17,6 +18,7 @@ export default async function BlogPage({ params }) {
                 <>
                     <h1 className={styles.title}>{blog.title}</h1>
                     <p className={styles.description}>{blog.decription}</p>
+                    <BlogIdDisplay/>
                 </>
             ) :
                 <h1 className={styles.title}>Blog not Found</h1>
